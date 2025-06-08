@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { reverse } from "dns";
+
 const Photos = () => {
   return (
     <div className="h-full w-full relative ">

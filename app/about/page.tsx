@@ -7,7 +7,7 @@ import {
   FaReact,
   FaFigma,
   FaVuejs,
-  FaNodeJs,
+
 } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 

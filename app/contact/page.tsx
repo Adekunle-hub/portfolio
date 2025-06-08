@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 
-import emailjs, { send } from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import {
   Select,
   SelectContent,
