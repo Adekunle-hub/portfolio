@@ -97,7 +97,7 @@ const Contact = () => {
                   Let's work together
                 </h3>
                 <p className="text-white/60 text-sm">
-                  Let’s build something great together—reach out and let’s make it happen.
+                  Let's build something great together—reach out and let's make it happen.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <Input type="text" value={formData.first_name} onChange={handleChange} name="first_name" placeholder="Firstname" />
