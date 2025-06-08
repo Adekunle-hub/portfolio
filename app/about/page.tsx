@@ -37,7 +37,7 @@ const experience = {
   icon: "/vanlife.png",
   title: "My Experience",
   description:
-    "Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "As a Frontend Developer that has worked on several projects including Balanceè Auto Services, I was responsible for designing and implementing a smart car repair booking interface. Leveraging React, TypeScript, and Tailwind CSS, I developed a real-time scheduling platform that managed availability across more than 40 repair stations.Previously, I served as Technical Lead for the NAMMES KWASU Chapter (Sept 2023 – May 2024), where I led the development of a student portal that streamlined communication and event coordination. I also provided mentorship in version control, Git workflows, and frontend development, while automating routine technical processes to enhance team efficiency.Additionally, I’ve worked as a Freelance Web Developer since 2023, delivering responsive, SEO-optimized websites for small businesses using modern frameworks such as Next.js and Astro. I prioritize client satisfaction by offering ongoing support and ensuring scalable, user-friendly design.",
   items: [
     {
       company: "Upworks",
@@ -159,13 +159,13 @@ const About = () => {
             </TabsList>
             <div className="min-h-[70vh] w-full">
               <TabsContent value="about" className="w-full text-center lg:text-left">
-                <div className="flex flex-col  gap-[30px]">
+                <div className="flex flex-col gap-[30px]">
                   <h3 className="font-bold  text-2xl">{about.title}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto lg:mx-0">{about.description}</p>
-                  <ul className="grid grod-cols-1 lg:grid-cols-2 gap-y-6 max-w-[620px] ms-auto lg:mx-0">
+                  <p className="max-w-[600px] text-justify text-white/60 mx-auto lg:mx-0">{about.description}</p>
+                  <ul className="grid grid-cols-1 w-full  lg:grid-cols-2 gap-y-6 max-w-[620px] mx-auto lg:mx-0">
                     {about.info.map((item, index)=>{
                       return(
-                        <li className="flex items-center justify-center lg:justify-start gap-2" key={index}>
+                        <li className="flex items-center justify-start lg:justify-start gap-2" key={index}>
                           <span className="text-white/60 text-xs">{item.fieldName}</span>
                           <span>{item.filedValue}</span>
 
@@ -178,7 +178,7 @@ const About = () => {
               <TabsContent value="experience" className="w-full ">
                 <div className="flex flex-col gap-[30px] text-center lg:text-left">
                   <h3 className="font-bold ">{experience.title}</h3>
-                  <p className="text-xs max-w-[600px] text-white/60 mx-auto lg:mx-0">
+                  <p className="text-[13px] text-justify lg:text-base max-w-[600px] text-white/60 mx-auto lg:mx-0">
                     {experience.description}
                   </p>
                   <ScrollArea className="h-[400px]">
@@ -189,11 +189,11 @@ const About = () => {
                             key={index}
                             className="flex flex-col py-6 px-10 rounded-xl gap-[10px] bg-[#232329] h-[184px] justify-center items-center lg:items-start "
                           >
-                            <span className="text-xs text-accent">{item.duartion}</span>
-                            <h3 className="text-sm max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
+                            <span className="text-[13px] lg:text-base text-accent">{item.duartion}</span>
+                            <h3 className="text-[13px] lg:text-base max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
                             <div className="flex items-center gap-3">
                               <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                              <p className="text-xs text-whitel/60">{item.company}</p>
+                              <p className="text-xl text-whitel/60">{item.company}</p>
                             </div>
                           </li>
                         );
@@ -205,7 +205,7 @@ const About = () => {
               <TabsContent value="education" className="w-full">
                <div className="flex flex-col gap-[30px] text-center lg:text-left">
                   <h3 className="font-bold ">{education.title}</h3>
-                  <p className="text-xs max-w-[600px] text-white/60 mx-auto lg:mx-0">
+                  <p className="text-[13px] lg:text-base max-w-[600px] text-white/60 mx-auto lg:mx-0">
                     {education.description}
                   </p>
                   <ScrollArea className="h-[400px]">
@@ -216,11 +216,11 @@ const About = () => {
                             key={index}
                             className="flex flex-col py-6 px-10 rounded-xl gap-[10px] bg-[#232329] h-[184px] justify-center items-center lg:items-start "
                           >
-                            <span className="text-xs text-accent">{item.duartion}</span>
-                            <h3 className="text-sm max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
+                            <span className="text-[13px] lg:text-base text-accent">{item.duartion}</span>
+                            <h3 className="text-[13px] lg:text-base max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
                             <div className="flex items-center gap-3">
                               <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                              <p className="text-xs text-whitel/60">{item.company}</p>
+                              <p className="text-xl text-white/60">{item.company}</p>
                             </div>
                           </li>
                         );
@@ -231,9 +231,9 @@ const About = () => {
               </TabsContent>
               <TabsContent value="skills" className="w-full h-full">
                 <div className="flex flex-col gap-[30px]">
-                  <div className="flex flex-col gap-[30px] text-center lg:text-left ">
-                    <h3> {skills.title}</h3>
-                    <p className="text-xs leading-5">{skills.description}</p>
+                  <div className="flex flex-col gap-[30px] text-justify lg:text-left ">
+                    <h3 className="text-center"> {skills.title}</h3>
+                    <p className="text-[13px] lg:text-base leading-5">{skills.description}</p>
                   </div>
                 
                 <ul className="grid grid-cols-2 sm:grid-cols-3 lg:py-[2rem] md:grid-cols-4 gap-[15px]">

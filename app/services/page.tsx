@@ -55,7 +55,7 @@ const Services = () => {
                 className="flex-1 flex gap-[2rem] flex-col justify-center group"
               >
                 <div className="w-full flex justify-between items-center">
-                  <div className="text-xl font-extrabold text-outline 
+                  <div className="text-2xl font-extrabold text-outline 
                   group-hover:[-webkit-text-stroke:1px_#00ff99] text-transparent
                   transition-all duration-500
                   ">
@@ -70,7 +70,7 @@ const Services = () => {
                 </div>
                 <h2 className="lg:text-[36px] text-[24px] font-bold leading-none text-white 
                 hover:text-accent transition-all">{service.title}</h2>
-                <p className="text-[10px] md:text-[13px]">{service.descrption}</p>
+                <p className="text-[13px] md:text-[16px]">{service.descrption}</p>
 
                 <div className="border-white/20 w-full border-b"></div>
               </div>

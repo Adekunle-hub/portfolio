@@ -42,7 +42,7 @@ const MobileNav = () => {
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         <SheetTitle className="sr-only">Main menu</SheetTitle>
-        <div className="mt-32 mb-32 text-center text-2xl">
+        <div className="mt-32 mb-32 text-[13px] lg:text-base text-center text-2xl">
           <Link className="items-center text-center" href="/">
             <h1 className="text-3xl inline font-semibold text-white">
               {" "}

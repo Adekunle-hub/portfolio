@@ -12,6 +12,7 @@ const Photos = () => {
           opacity: 1,
           transition: { delay: 2, duration: 0.4, ease: "easeInOut" },
         }}
+        className="py-8 lg:py-0"
         
       >
         <motion.div
