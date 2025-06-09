@@ -37,7 +37,7 @@ const info = [
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "no 3,airport road, alaakia, Ibadan.",
+    description: "no 3,airport road,alaakia,Ibadan.",
   },
 ];
 
@@ -148,7 +148,7 @@ const Contact = () => {
                         </div>
                         <div className="flex-1 flex gap-4 flex-col justify-center">
                           <p className="text-xs text-white/60">{item.title}</p>
-                          <h3 className="text-xs capitalize ">
+                          <h3 className="text-xs  ">
                             {item.description}
                           </h3>
                         </div>
