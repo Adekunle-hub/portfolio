@@ -5,7 +5,7 @@ export default function useLoadProgress(imageUrls: string[]) {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    let total = imageUrls.length;
+    const total = imageUrls.length;
     let loaded = 0;
 
     const updateProgress = () => {
