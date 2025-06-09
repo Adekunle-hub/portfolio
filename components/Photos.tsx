@@ -42,7 +42,7 @@ const Photos = () => {
           <motion.circle
             cx="200"
             cy="200"
-            r="240"
+            r="220"
             stroke="#00ff99"
             strokeWidth="4"
             strokeLinecap="round"

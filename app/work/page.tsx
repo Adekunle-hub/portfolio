@@ -30,7 +30,7 @@ const projects = [
         name: "Html 5",
       },
       {
-        name: "Css 3",
+        name: "TailwindCss",
       },
       {
         name: "Typescript",
@@ -48,7 +48,7 @@ const projects = [
     categore: "Keeper",
     title: "Project 2",
     description:
-      "This is a simple yet functional to-do list web app built with React. It allows users to add, delete, and manage tasks in a clean, user-friendly interface. The app demonstrates my understanding of React state management, component structure, and handling user interactions in real time—all while keeping the UI minimal and responsive.",
+      "A simple yet effective to-do list web app developed using HTML, CSS, and JavaScript. It allows users to add, delete, and manage tasks through a clean and user-friendly interface. The project highlights my understanding of DOM manipulation, event handling, and responsive design using core web technologies.",
     stack: [
       {
         name: "Html",
@@ -79,6 +79,9 @@ const projects = [
       },
       {
         name: "React",
+      },
+      {
+        name: "Typescript",
       },
     ],
     image: "/IMG1.png",
