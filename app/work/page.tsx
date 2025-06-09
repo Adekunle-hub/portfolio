@@ -39,7 +39,7 @@ const projects = [
         name: "React.Js",
       },
     ],
-    image: "/IMG3.png",
+    image: "/Rent UP.png",
     live: "https://rentup-sigma.vercel.app/",
     github: "https://github.com/Adekunle-hub/rentup",
   },
@@ -60,7 +60,7 @@ const projects = [
         name: "Javascript",
       },
     ],
-    image: "/IMG2.png",
+    image: "/Keeper2.png",
     live: "https://todos-teal-omega.vercel.app/",
     github: "https://github.com/Adekunle-hub/todos",
   },
@@ -84,7 +84,7 @@ const projects = [
         name: "Typescript",
       },
     ],
-    image: "/IMG1.png",
+    image: "/Balancee.png",
     live: "https://balancee-lilac.vercel.app/",
     github: "https://github.com/Adekunle-hub/balancee",
   },
@@ -161,9 +161,9 @@ const Work = () => {
                 {projects.map((project, index)=>{
                   return(
                     <SwiperSlide className="w-fit" key={index}>
-                      <div className="h-[330px] relative group flex justify-center items-center">
-                        <div className="absolute top-0 bottom-0 w-fit h-full  z-10"></div>
-                        <div className="relative h-full w-full">
+                      <div className="h-[400px]  relative group flex items-center justify-center">
+                        <div className="absolute top-0 bottom-0 w-full h-[400px]  z-10"></div>
+                        <div className="relative h-[400px] w-[90%]">
                           <Image
                           fill
                           src={project.image} className="object-contain" alt="image" />
