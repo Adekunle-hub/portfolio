@@ -20,10 +20,7 @@ const Links = [
     name: "work",
     path: "/work",
   },
-  {
-    name: "contact",
-    path: "/contact",
-  },
+
 ];
 const Nav = () => {
   const pathName = usePathname();

@@ -1,5 +1,7 @@
 "use client";
+
 import CountUp from "react-countup";
+import Container from "./Container";
 
 const stats = [
   {
@@ -22,9 +24,10 @@ const stats = [
 
 const Stats = () => {
   return (
-    <section className="pt-4 pb-12 lg:pt-0 lg:pb-0">
+   
+     <section className="pt-4 pb-12 lg:pt-0 lg:pb-0">
       <div className="container  mx-auto">
-        <div className="flex flex-wrap items-center justify-center min-w-[80vw] py-[3rem] gap-6">
+        <div className="flex flex-wrap items-center justify-center max-w-[80vw] py-[3rem] gap-6">
           {stats.map((item, index) => (
             <div
             className="flex-1 flex gap-4 items-center justify-center lg:justify-start"
@@ -45,6 +48,11 @@ const Stats = () => {
         </div>
       </div>
     </section>
+   
+  
+   
+   
+  
   );
 };
 
