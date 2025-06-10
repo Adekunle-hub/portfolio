@@ -44,6 +44,11 @@ const experience = {
       position: "Freelancer",
       duartion: "2023-present",
     },
+     {
+      company: "Sobisay Studios",
+      position: "Freelancer",
+      duartion: "2025 march - present",
+    },
 
     {
       company: "Lush Allure",

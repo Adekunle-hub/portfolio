@@ -21,6 +21,30 @@ import WorkSliderBtns from "@/components/ui/WorkSliderBtns";
 const projects = [
   {
     num: "01",
+    categore: "Sobisay Studios",
+    title: "Sobisay Studios",
+    description:
+      "Sobisay Studios Grow Double, Triple, or Even 10X Your Business Online—Fast. At Sobisay Studios, we specialize in crafting high-impact videos that captivate your audience and generate traffic, alongside conversion-focused websites that turn visitors into loyal customers. Take charge of your online presence and scale with confidence.",
+    stack: [
+      {
+        name: "Html 5",
+      },
+      {
+        name: "TailwindCss",
+      },
+      {
+        name: "Typescript",
+      },
+      {
+        name: "React.Js",
+      },
+    ],
+    image: "/sobisay1.png",
+    live: "https://sobisay-1oyl.vercel.app/",
+    github: "https://github.com/Adekunle-hub/sobisay",
+  },
+  {
+    num: "02",
     categore: "Rent Up",
     title: "Rent Up",
     description:
@@ -44,7 +68,7 @@ const projects = [
     github: "https://github.com/Adekunle-hub/rentup",
   },
   {
-    num: "02",
+    num: "03",
     categore: "Keeper",
     title: "Project 2",
     description:
@@ -65,7 +89,7 @@ const projects = [
     github: "https://github.com/Adekunle-hub/todos",
   },
   {
-    num: "03",
+    num: "04",
     categore: "Balanceè–Smart Booking Interface",
     title: "Project 3",
     description:
