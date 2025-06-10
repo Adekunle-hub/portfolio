@@ -1,7 +1,6 @@
 "use client";
 
 import CountUp from "react-countup";
-import Container from "./Container";
 
 const stats = [
   {
