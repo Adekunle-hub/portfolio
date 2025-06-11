@@ -11,13 +11,13 @@ export default function Home() {
     <Container>
       <section className="h-full w-[90%] mx-auto ">
         <div className="flex flex-col lg:flex-row gap-y-[3rem] justify-between items-center">
-          <div className="text-center w-full  order-2 lg:order-none lg:text-left">
+          <div className="text-center w-full order-2 lg:order-none lg:text-left">
             <span className="text-base ">Software Developer</span>
             <h1 className="my-6 flex flex-col gap-4">
               Hello I'm <br />
               <span className="text-accent">Mujeeb</span>
             </h1>
-            <p className="text-white/80 text-sm max-w-[450px] mb-8 ">
+            <p className="text-white/80 text-sm min-w-[450px] mb-8 ">
               I specialize in building fast, responsive, and accessible web interfaces using React, Next.js, and other modern tools.{" "}
             </p>
             <div className="flex flex-col lg:flex-row items-center gap-8">

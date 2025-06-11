@@ -47,6 +47,7 @@ const projects = [
     num: "02",
     categore: "Rent Up",
     title: "Rent Up",
+    
     description:
       "RentUp is a modern property rental web app designed to help users explore available apartments and homes with ease. Built using React and styled with Tailwind CSS, the platform features a clean, responsive interface, property listings with key details, and intuitive navigation. This project showcases my ability to build real-world applications with a focus on layout, component reuse, and user experience.",
     stack: [
