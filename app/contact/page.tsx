@@ -4,6 +4,7 @@ import Container from "@/components/Container";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
+import { toast } from "react-hot-toast";
 
 import emailjs from "@emailjs/browser";
 import {
@@ -15,9 +16,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-const serviceIdKey:string = process.env.NEXT_PUBLIC_SERVICEIDKEY!;
-const publicKey:string = process.env.NEXT_PUBLIC_PUBLICKEY!;
-const templateKey:string = process.env.NEXT_PUBLIC_TEMPLATEKEY!;
+const serviceIdKey: string = process.env.NEXT_PUBLIC_SERVICEIDKEY!;
+const publicKey: string = process.env.NEXT_PUBLIC_PUBLICKEY!;
+const templateKey: string = process.env.NEXT_PUBLIC_TEMPLATEKEY!;
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -42,38 +43,39 @@ const info = [
 ];
 
 const Contact = () => {
- const [formData, setFormData] = useState({
-  first_name:'',
-  last_name:"",
-  user_email:"",
-  user_phone:"",
-  message:""
- })
+  const defaultData = {
+    first_name: "",
+    last_name: "",
+    user_email: "",
+    user_phone: "",
+    message: "",
+  };
+  const [formData, setFormData] = useState(defaultData);
 
- const handleChange = (e:React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>{
-  setFormData({...formData, [e.target.name]:e.target.value})
- }
- const isFormValid = Object.values(formData).every((val)=> val.trim() !== "")
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+  const isFormValid = Object.values(formData).every((val) => val.trim() !== "");
 
   const form = useRef<HTMLFormElement | null>(null);
 
   const sendMail = (e: React.FormEvent<HTMLFormElement>) => {
-    console.log(serviceIdKey)
+    console.log(serviceIdKey);
     e.preventDefault();
     if (!form.current) return;
 
-    emailjs.sendForm(
-      serviceIdKey,
-      templateKey,
-      form.current,
-      publicKey
-    ).then(()=>{
-      console.log('success')
-      form.current?.reset()
-    },(error)=>{
-      console.log("FAILED...",error.text)
-    }
-  )
+    emailjs.sendForm(serviceIdKey, templateKey, form.current, publicKey).then(
+      () => {
+        toast.success("Message Sent Succesfully!");
+        setFormData(defaultData);
+        form.current?.reset();
+      },
+      (error) => {
+        toast.error("Message not sent");
+      }
+    );
   };
   return (
     <Container>
@@ -97,13 +99,38 @@ const Contact = () => {
                   Let's work together
                 </h3>
                 <p className="text-white/60 text-sm">
-                  Let's build something great together—reach out and let's make it happen.
+                  Let's build something great together—reach out and let's make
+                  it happen.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <Input type="text" value={formData.first_name} onChange={handleChange} name="first_name" placeholder="Firstname" />
-                  <Input type="text" value={formData.last_name} onChange={handleChange} name="last_name" placeholder="Lastname" />
-                  <Input type="text" value={formData.user_email} onChange={handleChange} name="user_email" placeholder="Email Address" />
-                  <Input type="text" value={formData.user_phone} onChange={handleChange} name="user_phone" placeholder="Phone Number" />
+                  <Input
+                    type="text"
+                    value={formData.first_name}
+                    onChange={handleChange}
+                    name="first_name"
+                    placeholder="Firstname"
+                  />
+                  <Input
+                    type="text"
+                    value={formData.last_name}
+                    onChange={handleChange}
+                    name="last_name"
+                    placeholder="Lastname"
+                  />
+                  <Input
+                    type="text"
+                    value={formData.user_email}
+                    onChange={handleChange}
+                    name="user_email"
+                    placeholder="Email Address"
+                  />
+                  <Input
+                    type="text"
+                    value={formData.user_phone}
+                    onChange={handleChange}
+                    name="user_phone"
+                    placeholder="Phone Number"
+                  />
                 </div>
 
                 <Select name="service">
@@ -113,21 +140,23 @@ const Contact = () => {
                   <SelectContent>
                     <SelectGroup>
                       <SelectLabel>select a service</SelectLabel>
-                      <SelectItem value="Web Development">Web Development</SelectItem>
+                      <SelectItem value="Web Development">
+                        Web Development
+                      </SelectItem>
                       <SelectItem value="UI/UX Design">UI/UX Design</SelectItem>
                       <SelectItem value="SEO">SEO</SelectItem>
                     </SelectGroup>
                   </SelectContent>
                 </Select>
                 <Textarea
-                name="message"
-                onChange={handleChange}
-                value={formData.message}
+                  name="message"
+                  onChange={handleChange}
+                  value={formData.message}
                   className="h-[200px]"
                   placeholder="type your message here"
                 ></Textarea>
                 <Button
-                disabled={!isFormValid}
+                  disabled={!isFormValid}
                   type="submit"
                   value="send"
                   className="w-[150px] disabled:opacity-30"
@@ -148,9 +177,7 @@ const Contact = () => {
                         </div>
                         <div className="flex-1 flex gap-4 flex-col justify-center">
                           <p className="text-xs text-white/60">{item.title}</p>
-                          <h3 className="text-xs  ">
-                            {item.description}
-                          </h3>
+                          <h3 className="text-xs  ">{item.description}</h3>
                         </div>
                       </div>
                     </li>

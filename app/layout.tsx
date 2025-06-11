@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairsEffect from "@/components/StairsEffect";
 import PreloaderWrapper from "@/components/PreLoaderWrapper";
+import { Toaster } from "react-hot-toast";
 
 const jetbrainsmMono = JetBrains_Mono({
   variable: "--font-jetbrainsMono",
@@ -26,9 +27,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${jetbrainsmMono.variable}  antialiased`}>
         <PreloaderWrapper>
-          <Header />
-          <StairsEffect />
-          <PageTransition>{children}</PageTransition>
+          <Toaster position="top-right" />
+            <Header />
+            <StairsEffect />
+            <PageTransition>{children}</PageTransition>
+          
         </PreloaderWrapper>
       </body>
     </html>
