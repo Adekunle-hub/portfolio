@@ -41,18 +41,18 @@ const MobileNav = () => {
         <SheetTrigger className="flex justify-center items-center">
           <CiMenuFries className="text-[32px] text-accent" />
         </SheetTrigger>
-        <SheetContent className="flex flex-col ">
+        <SheetContent className="flex flex-col overflow-y-auto ">
           <SheetTitle className="sr-only">Main menu</SheetTitle>
-          <div className="mt-32 md:mb-16 mb-24 text-[13px] lg:text-base text-center text-2xl">
+          <div className="mt-32  mb-16 text-[13px] lg:text-base text-center text-2xl">
             <Link className="items-center text-center" href="/">
-              <h1 className="text-3xl inline font-semibold text-white">
+              <h1 className="lg:text-3xl text-xl inline font-semibold text-white">
                 {" "}
                 Mujeeb Ishola
               </h1>
               <span className="text-accent">.</span>
             </Link>
           </div>
-          <nav className="flex flex-col overflow-y-auto gap-3 items-center justify-center">
+          <nav className="flex flex-col overflow-y-auto gap-3 pb-[1rem] items-center justify-center">
             {links.map((link, index) => {
               return (
                 <SheetClose asChild key={link.path}>
