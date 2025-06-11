@@ -43,7 +43,7 @@ const MobileNav = () => {
         </SheetTrigger>
         <SheetContent className="flex flex-col ">
           <SheetTitle className="sr-only">Main menu</SheetTitle>
-          <div className="mt-32 md:mb-16 mb-24 text-[13px] overflow-y-auto lg:text-base text-center text-2xl">
+          <div className="mt-32 md:mb-16 mb-24 text-[13px] lg:text-base text-center text-2xl">
             <Link className="items-center text-center" href="/">
               <h1 className="text-3xl inline font-semibold text-white">
                 {" "}
@@ -52,7 +52,7 @@ const MobileNav = () => {
               <span className="text-accent">.</span>
             </Link>
           </div>
-          <nav className="flex flex-col gap-3 items-center justify-center">
+          <nav className="flex flex-col overflow-y-scroll gap-3 items-center justify-center">
             {links.map((link, index) => {
               return (
                 <SheetClose asChild key={link.path}>
