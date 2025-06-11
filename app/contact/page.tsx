@@ -17,7 +17,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 const serviceIdKey: string = process.env.NEXT_PUBLIC_SERVICEIDKEY!;
-const publicKey: string = process.env.NEXT_PUBLIC_PUBLICKEY!;
+const publicKey:string= "v1TCu8ox5lXhqMF6K"
 const templateKey: string = process.env.NEXT_PUBLIC_TEMPLATEKEY!;
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
