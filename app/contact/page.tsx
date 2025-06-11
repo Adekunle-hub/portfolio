@@ -20,7 +20,7 @@ const serviceIdKey = process.env.NEXT_PUBLIC_SERVICE_ID!;
 const publicKey = process.env.NEXT_PUBLIC_CLIENT_KEY!;
 const templateKey= process.env.NEXT_PUBLIC_TEMPLATE_KEY!;
 
-console.log(publicKey)
+
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
