@@ -17,7 +17,7 @@ export default function Home() {
               Hello I'm <br />
               <span className="text-accent">Mujeeb</span>
             </h1>
-            <p className="text-white/80 text-sm min-w-[450px] mb-8 ">
+            <p className="text-white/80 text-sm mb-8 ">
               I specialize in building fast, responsive, and accessible web interfaces using React, Next.js, and other modern tools.{" "}
             </p>
             <div className="flex flex-col lg:flex-row items-center gap-8">
