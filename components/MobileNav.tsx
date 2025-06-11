@@ -52,7 +52,7 @@ const MobileNav = () => {
               <span className="text-accent">.</span>
             </Link>
           </div>
-          <nav className="flex flex-col  gap-3 items-center justify-center">
+          <nav className="flex flex-col overflow-y-auto gap-3 items-center justify-center">
             {links.map((link, index) => {
               return (
                 <SheetClose asChild key={link.path}>
