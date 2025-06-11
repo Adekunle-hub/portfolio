@@ -73,7 +73,7 @@ const Contact = () => {
         form.current?.reset();
       },
       (error) => {
-        toast.error("Message not sent");
+        toast.error( error || "Message not sent");
       }
     );
   };
