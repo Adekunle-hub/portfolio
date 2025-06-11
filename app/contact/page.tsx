@@ -16,9 +16,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-const serviceIdKey = process.env.SERVICE_ID!;
-const publicKey = process.env.CLIENT_KEY!;
-const templateKey= process.env.TEMPLATE_KEY!;
+const serviceIdKey = process.env.NEXT_PUBLIC_SERVICE_ID!;
+const publicKey = process.env.NEXT_PUBLIC_CLIENT_KEY!;
+const templateKey= process.env.NEXT_PUBLIC_TEMPLATE_KEY!;
 
 console.log(publicKey)
 
