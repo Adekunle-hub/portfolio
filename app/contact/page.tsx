@@ -16,8 +16,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+const publicKey: string = "v1TCu8ox5lXhqMF6K";
 const serviceIdKey: string = process.env.NEXT_PUBLIC_SERVICEIDKEY!;
-const publicKey:string= "v1TCu8ox5lXhqMF6K"
+
 const templateKey: string = process.env.NEXT_PUBLIC_TEMPLATEKEY!;
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
@@ -73,7 +74,7 @@ const Contact = () => {
         form.current?.reset();
       },
       (error) => {
-        toast.error( error || "Message not sent");
+        toast.error(error || "Message not sent");
       }
     );
   };
