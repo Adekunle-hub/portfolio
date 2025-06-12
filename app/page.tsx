@@ -18,27 +18,32 @@ export default function Home() {
               <span className="text-accent">Mujeeb</span>
             </h1>
             <p className="text-white/80 text-sm mb-8 ">
-              I specialize in building fast, responsive, and accessible web interfaces using React, Next.js, and other modern tools.{" "}
+              I specialize in building fast, responsive, and accessible web
+              interfaces using React, Next.js, and other modern tools.{" "}
             </p>
             <div className="flex flex-col lg:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="md"
-                className="uppercase flex items-center gap-2"
-              >
-                <span>Download CV</span>
-                <FiDownload />
-              </Button>
+              <a href="/cv.jpg" download>
+                {" "}
+                <Button
+                  variant="outline"
+                  size="md"
+                  className="uppercase cursor-pointer flex items-center gap-2"
+                >
+                  <span>Download CV</span>
+                  <FiDownload />
+                </Button>
+              </a>
+
               <div>
-                <Socials/>
+                <Socials />
               </div>
             </div>
           </div>
           <div className="order-1 lg:order-none  mb:8 xl:mb-0">
-            <Photos/>
+            <Photos />
           </div>
         </div>
-      <Stats />
+        <Stats />
       </section>
     </Container>
   );
