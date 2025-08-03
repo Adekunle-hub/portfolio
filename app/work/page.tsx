@@ -148,7 +148,7 @@ const Work = () => {
                 <ul className="flex">
                   {project.stack.map((item, index) => {
                     return (
-                      <li className="text-accent" key={index}>
+                      <li className="text-accent text-[12px]" key={index}>
                         {item.name}
                         {index !== project.stack.length - 1 && ","}
                       </li>
