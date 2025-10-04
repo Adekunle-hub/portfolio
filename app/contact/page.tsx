@@ -97,10 +97,10 @@ const Contact = () => {
                 onSubmit={sendMail}
                 className="flex flex-col gap-6 py-10 px-3  bg-[#27272c] rounded-xl"
               >
-                <h3 className="text-2xl w-full lg:text-start text-center text-accent">
+                <h3 className="lg:text-2xl text-[1rem] w-full lg:text-start text-center text-accent">
                   Let's work together
                 </h3>
-                <p className="text-white/60 text-sm">
+                <p className="text-white/60 text-[10px]  lg:text-sm">
                   Let's build something great together—reach out and let's make
                   it happen.
                 </p>

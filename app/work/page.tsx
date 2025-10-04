@@ -21,6 +21,30 @@ import WorkSliderBtns from "@/components/ui/WorkSliderBtns";
 const projects = [
   {
     num: "01",
+    categore: "Quick Cart",
+    title: "quick cart",
+    description:
+      "Quick-Cart is a modern ecommerce platform designed to make online shopping fast, simple, and reliable. With a clean interface and smart navigation, customers can browse a wide range of products, add items to their cart seamlessly, and enjoy a secure checkout experience.",
+    stack: [
+      {
+        name: "Html 5",
+      },
+      {
+        name: "TailwindCss",
+      },
+      {
+        name: "Typescript",
+      },
+      {
+        name: "Next.Js",
+      },
+    ],
+    image: "/Capture.PNG",
+    live: "https://soft-cart.vercel.app/",
+    github: "https://github.com/Adekunle-hub/soft-cart",
+  },
+  {
+    num: "02",
     categore: "Sobisay Studios",
     title: "Sobisay Studios",
     description:
@@ -44,7 +68,7 @@ const projects = [
     github: "https://github.com/Adekunle-hub/sobisay",
   },
   {
-    num: "02",
+    num: "03",
     categore: "Rent Up",
     title: "Rent Up",
     
@@ -69,7 +93,7 @@ const projects = [
     github: "https://github.com/Adekunle-hub/rentup",
   },
   {
-    num: "03",
+    num: "04",
     categore: "Keeper",
     title: "Project 2",
     description:
@@ -90,7 +114,7 @@ const projects = [
     github: "https://github.com/Adekunle-hub/todos",
   },
   {
-    num: "04",
+    num: "05",
     categore: "Balanceè–Smart Booking Interface",
     title: "Project 3",
     description:
@@ -148,7 +172,7 @@ const Work = () => {
                 <ul className="flex">
                   {project.stack.map((item, index) => {
                     return (
-                      <li className="text-accent" key={index}>
+                      <li className="text-accent text-[12px]" key={index}>
                         {item.name}
                         {index !== project.stack.length - 1 && ","}
                       </li>
