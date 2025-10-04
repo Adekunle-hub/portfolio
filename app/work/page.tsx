@@ -92,51 +92,8 @@ const projects = [
     live: "https://rentup-sigma.vercel.app/",
     github: "https://github.com/Adekunle-hub/rentup",
   },
-  {
-    num: "04",
-    categore: "Keeper",
-    title: "Project 2",
-    description:
-      "A simple yet effective to-do list web app developed using HTML, CSS, and JavaScript. It allows users to add, delete, and manage tasks through a clean and user-friendly interface. The project highlights my understanding of DOM manipulation, event handling, and responsive design using core web technologies.",
-    stack: [
-      {
-        name: "Html",
-      },
-      {
-        name: "CSS 3",
-      },
-      {
-        name: "Javascript",
-      },
-    ],
-    image: "/Keeper2.png",
-    live: "https://todos-teal-omega.vercel.app/",
-    github: "https://github.com/Adekunle-hub/todos",
-  },
-  {
-    num: "05",
-    categore: "Balanceè–Smart Booking Interface",
-    title: "Project 3",
-    description:
-      "Balanceè is a web-based smart booking platform designed for users to schedule car repair services efficiently. Built with React, TypeScript, and Tailwind CSS, it features service station listings, availability filtering, and a streamlined booking flow. This project highlights my skills in data structuring, UI logic, and creating responsive, user-friendly interfaces with real-world utility.",
-    stack: [
-      {
-        name: "Html 5",
-      },
-      {
-        name: "Tailwind Css",
-      },
-      {
-        name: "React",
-      },
-      {
-        name: "Typescript",
-      },
-    ],
-    image: "/Balancee.png",
-    live: "https://balancee-lilac.vercel.app/",
-    github: "https://github.com/Adekunle-hub/balancee",
-  },
+ 
+   
 ];
 
 const Work = () => {
