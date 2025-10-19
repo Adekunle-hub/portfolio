@@ -22,7 +22,7 @@ export default function Home() {
               interfaces using React, Next.js, and other modern tools.{" "}
             </p>
             <div className="flex flex-col lg:flex-row items-center gap-8">
-              <a href="/cv.jpg" download>
+              <a href="/MUJEEB RESUME.pdf" download>
                 {" "}
                 <Button
                   variant="outline"
