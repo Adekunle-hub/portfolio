@@ -27,8 +27,8 @@ const Photos = () => {
             fill
             priority
             quality={100}
-            className="  object-cover object-top rounded-full  "
-            src="/check2.jpg"
+            className="  object-cover rounded-full  "
+            src="/ME.webp"
             alt="profile-picture"
           />
         </motion.div>

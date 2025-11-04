@@ -38,6 +38,9 @@ const projects = [
       {
         name: "Next.Js",
       },
+      {
+        name: "shadcn/ui",
+      },
     ],
     image: "/Capture.PNG",
     live: "https://soft-cart.vercel.app/",
@@ -62,13 +65,44 @@ const projects = [
       {
         name: "React.Js",
       },
+      {
+        name: "shadcn/ui",
+      },
     ],
     image: "/sobisay1.png",
     live: "https://sobisay-1oyl.vercel.app/",
     github: "https://github.com/Adekunle-hub/sobisay",
   },
-  {
+   {
     num: "03",
+    categore: "3D Todo App",
+    title: "3D Todo App",
+
+    description:
+      "3D Todo App is a modern task management application that helps users organize and prioritize their tasks effectively. Built using React and Three.js, the app features a unique 3D interface that enhances user experience and engagement. Users can create, edit, and delete tasks, set deadlines, and visualize their progress in a dynamic 3D environment.",
+    stack: [
+      {
+        name: "React Three Fiber",
+      },
+      {
+        name: "React Js",
+      },
+      {
+        name: "Typescript",
+      },
+      {
+        name: "TailwindCss",
+      },
+      {
+        name: "shadcn/ui",
+      },
+    ],
+    image: "/todo.PNG",
+    live: "https://tobams-todo-six.vercel.app/",
+    github: "https://github.com/Adekunle-hub/Tobams-Todo",
+  },
+  {
+    num: "04",
     categore: "Rent Up",
     title: "Rent Up",
     
